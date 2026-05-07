@@ -1,0 +1,223 @@
+* {
+    font-family: "Cascadia Mono", "Consolas", "Microsoft YaHei UI";
+    font-size: 12px;
+    color: #D7FBE8;
+    selection-background-color: #00FF41;
+    selection-color: #07140B;
+}
+
+QMainWindow, QWidget {
+    background-color: #0D0D0D;
+}
+
+#NavBar {
+    background-color: #080A0A;
+    border-right: 1px solid rgba(0, 255, 65, 90);
+    outline: none;
+}
+
+#NavBar::item {
+    height: 42px;
+    padding-left: 14px;
+    color: #8AFFB5;
+    border-left: 3px solid transparent;
+}
+
+#NavBar::item:selected {
+    color: #00FF41;
+    background: rgba(0, 255, 65, 24);
+    border-left: 3px solid #00FF41;
+}
+
+QGroupBox {
+    border: 1px solid rgba(0, 240, 255, 90);
+    border-radius: 8px;
+    margin-top: 14px;
+    padding: 12px;
+    color: #00F0FF;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 12px;
+    padding: 0 6px;
+}
+
+QLineEdit, QComboBox, QPlainTextEdit, QTableWidget, QListWidget {
+    background-color: #080A0A;
+    border: 1px solid rgba(0, 255, 65, 75);
+    border-radius: 6px;
+    color: #C9FFE0;
+}
+
+QLineEdit, QComboBox {
+    min-height: 30px;
+    padding: 4px 8px;
+}
+
+QPlainTextEdit {
+    color: #00FF41;
+    padding: 8px;
+}
+
+#TemplateEditor {
+    background-color: #070B0B;
+    border: 1px solid rgba(0, 240, 255, 100);
+    border-radius: 8px;
+    color: #B9FFD1;
+}
+
+QPushButton {
+    background-color: #101615;
+    border: 1px solid #00FF41;
+    border-radius: 6px;
+    color: #00FF41;
+    min-height: 30px;
+    outline: none;
+    padding: 4px 12px;
+}
+
+QPushButton:hover {
+    background-color: rgba(0, 255, 65, 32);
+    border: 1px solid #00F0FF;
+    color: #00F0FF;
+}
+
+QPushButton:pressed {
+    background-color: rgba(0, 255, 65, 60);
+}
+
+QPushButton:focus {
+    border: 1px solid #00FF41;
+}
+
+QPushButton:disabled {
+    background-color: #0A0D0D;
+    border: 1px solid rgba(0, 255, 65, 45);
+    color: rgba(215, 251, 232, 90);
+}
+
+#GenerateButton {
+    background-color: #00363A;
+    border: 2px solid #00F0FF;
+    border-radius: 12px;
+    color: #E7FFFF;
+    font-size: 15px;
+    font-weight: 700;
+    min-height: 56px;
+    min-width: 280px;
+    padding: 10px 34px;
+}
+
+#GenerateButton:hover {
+    background-color: #064C37;
+    border: 2px solid #00FF41;
+    color: #F0FFF6;
+}
+
+#GenerateButton:focus {
+    border: 2px solid #00F0FF;
+}
+
+QHeaderView::section {
+    background-color: #101615;
+    color: #00F0FF;
+    border: 0;
+    border-bottom: 1px solid rgba(0, 255, 65, 100);
+    padding: 7px;
+}
+
+QTableWidget {
+    gridline-color: rgba(0, 255, 65, 45);
+    alternate-background-color: #0F1413;
+}
+
+QTableWidget::item {
+    padding: 5px;
+}
+
+QListWidget::item {
+    min-height: 26px;
+    padding: 4px 8px;
+}
+
+QListWidget::item:selected {
+    background: rgba(0, 240, 255, 35);
+    color: #00F0FF;
+}
+
+QCheckBox {
+    spacing: 8px;
+}
+
+#DataProcessPanel {
+    background-color: rgba(0, 240, 255, 12);
+    border: 1px solid rgba(0, 240, 255, 70);
+    border-radius: 8px;
+}
+
+#DataProcessPanel QCheckBox {
+    color: #B9FFD1;
+    padding: 2px 4px;
+}
+
+#DataProcessPanel QLineEdit {
+    min-width: 86px;
+    max-width: 110px;
+    color: #00F0FF;
+    border-color: rgba(0, 240, 255, 110);
+}
+
+#InlineLabel {
+    color: #7FFFD4;
+    font-size: 11px;
+}
+
+QCheckBox::indicator {
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    border: 1px solid #00FF41;
+    background: #080A0A;
+}
+
+QCheckBox::indicator:checked {
+    background: #00FF41;
+}
+
+QScrollBar:vertical {
+    background: #060808;
+    width: 10px;
+}
+
+QScrollBar::handle:vertical {
+    background: #00FF41;
+    border-radius: 5px;
+    min-height: 28px;
+}
+
+QSplitter::handle {
+    background: rgba(0, 240, 255, 80);
+}
+
+#AboutTitle {
+    color: #00F0FF;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0;
+}
+
+#AboutSubtitle {
+    color: #B9FFD1;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#AboutText {
+    color: #D8F7E8;
+    font-size: 14px;
+}
+
+#AboutText a {
+    color: #00F0FF;
+}

@@ -1,0 +1,25 @@
+﻿{
+  "version": 6,
+  "configurePresets": [
+    {
+      "name": "windows-clang-qt",
+      "displayName": "Windows Qt 6.11 with auto MinGW packaging",
+      "generator": "NMake Makefiles",
+      "binaryDir": "${sourceDir}/build",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "CMAKE_MAKE_PROGRAM": "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/nmake.exe",
+        "CMAKE_CXX_COMPILER": "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/Llvm/x64/bin/clang-cl.exe",
+        "CMAKE_TRY_COMPILE_TARGET_TYPE": "STATIC_LIBRARY",
+        "QT_MSVC_ROOT": "D:/Qt/6.11.0/msvc2022_64"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "release",
+      "configurePreset": "windows-clang-qt",
+      "configuration": "Release"
+    }
+  ]
+}
